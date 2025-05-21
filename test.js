@@ -197,4 +197,25 @@ console.log(output); // Output: "HelloWorld"
 
 // ---------------------------------------------------------------------------------------------------------------------------
 
-// Question 11:  
+// Question 11: Write a python function to capitalize first letter of each word in the string.
+
+function CaptializeFirstChar(str) {
+  return str.split(' ')
+            .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+            .join(' ')
+}
+
+console.log(CaptializeFirstChar('hello my name is atharva'));
+
+
+function capitalizeFirstWord(str) {
+  if (!str) return str; // Handle empty string
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+// Example usage:
+// input = "hello world, this is JavaScript";
+capitalizeFirstWord("hello world, this is JavaScript");
+console.log(capitalizeFirstWord("hello world, this is JavaScript")); // Output: "Hello world, this is JavaScript"
+
+
